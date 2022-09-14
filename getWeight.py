@@ -4,6 +4,7 @@
 # export csv file
 import os
 import csv
+import math
 import requests
 from module import CalcDistance as cd
 
@@ -26,13 +27,18 @@ with open(path, 'w', encoding='utf-8') as f:
         target_data = jsonData['data']['stations'][target]
         target_pos = [target_data['lon'], target_data['lat']]
 
-        totalDist = 0
+        totalScore = 0
 
         for i in range(stationCount):
             if i != target:
                 current_data = jsonData['data']['stations'][i]
                 current_pos = [current_data['lon'], current_data['lat']]
                 dist = cd.CalcDistance(current_pos, target_pos)
-                totalDist += dist
+                if dist > 5000:
+                    score = 0
+                else:
+                    score = 10 - math.floor(dist / 500)
 
-        writer.writerow([target_data['station_id'], 1/totalDist * 100000000])
+                totalScore += score
+
+        writer.writerow([target_data['station_id'], totalScore/100])
