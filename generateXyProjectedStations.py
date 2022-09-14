@@ -2,7 +2,6 @@ from module import ProjectedMercator as pm
 
 # https://api-public.odpt.org/api/v4/gbfs/docomo-cycle-tokyo/station_information.json
 # 上記のURLからjsonを取得
-from textwrap import indent
 import requests
 import json
 import csv
