@@ -1,0 +1,156 @@
+{
+  "type": "FeatureCollection",
+  "query": [139.775376, 35.691069],
+  "features": [
+    {
+      "id": "poi.343597486527",
+      "type": "Feature",
+      "place_type": ["poi"],
+      "relevance": 1,
+      "properties": {
+        "foursquare": "591735122632ec61e654df29",
+        "landmark": true,
+        "address": "岩本町1-1",
+        "category": "bicycle rental, shop"
+      },
+      "text": "千代田区コミュニティサイクル ちよくる ポートA3-16.地蔵橋東児童遊園",
+      "place_name": "千代田区コミュニティサイクル ちよくる ポートA3-16.地蔵橋東児童遊園, 岩本町1-1, 東京都, Tokyo Prefecture 101-0032, Japan",
+      "center": [139.775318, 35.691091],
+      "geometry": { "coordinates": [139.775318, 35.691091], "type": "Point" },
+      "context": [
+        { "id": "postcode.114036340", "text": "101-0032" },
+        { "id": "locality.1813108", "wikidata": "Q214051", "text": "千代田区" },
+        { "id": "place.5195892", "wikidata": "Q1490", "text": "東京都" },
+        {
+          "id": "region.15637623541111140",
+          "short_code": "JP-13",
+          "wikidata": "Q1490",
+          "text": "Tokyo Prefecture"
+        },
+        {
+          "id": "country.12470811176530190",
+          "wikidata": "Q17",
+          "short_code": "jp",
+          "text": "Japan"
+        }
+      ]
+    },
+    {
+      "id": "postcode.114036340",
+      "type": "Feature",
+      "place_type": ["postcode"],
+      "relevance": 1,
+      "properties": {},
+      "text": "101-0032",
+      "place_name": "Japan, Tokyo Prefecture千代田区101-0032",
+      "bbox": [139.774745, 35.690972, 139.779953, 35.69691],
+      "center": [139.777084, 35.693996],
+      "geometry": { "type": "Point", "coordinates": [139.777084, 35.693996] },
+      "context": [
+        { "id": "locality.1813108", "wikidata": "Q214051", "text": "千代田区" },
+        { "id": "place.5195892", "wikidata": "Q1490", "text": "東京都" },
+        {
+          "id": "region.15637623541111140",
+          "short_code": "JP-13",
+          "wikidata": "Q1490",
+          "text": "Tokyo Prefecture"
+        },
+        {
+          "id": "country.12470811176530190",
+          "wikidata": "Q17",
+          "short_code": "jp",
+          "text": "Japan"
+        }
+      ]
+    },
+    {
+      "id": "locality.1813108",
+      "type": "Feature",
+      "place_type": ["locality"],
+      "relevance": 1,
+      "properties": { "wikidata": "Q214051" },
+      "text": "千代田区",
+      "place_name": "Japan, Tokyo Prefecture千代田区",
+      "bbox": [139.729998, 35.668684, 139.782657, 35.705352],
+      "center": [139.749888, 35.687206],
+      "geometry": { "type": "Point", "coordinates": [139.749888, 35.687206] },
+      "context": [
+        { "id": "place.5195892", "wikidata": "Q1490", "text": "東京都" },
+        {
+          "id": "region.15637623541111140",
+          "short_code": "JP-13",
+          "wikidata": "Q1490",
+          "text": "Tokyo Prefecture"
+        },
+        {
+          "id": "country.12470811176530190",
+          "wikidata": "Q17",
+          "short_code": "jp",
+          "text": "Japan"
+        }
+      ]
+    },
+    {
+      "id": "place.5195892",
+      "type": "Feature",
+      "place_type": ["place"],
+      "relevance": 1,
+      "properties": { "wikidata": "Q1490" },
+      "text": "東京都",
+      "place_name": "Japan, Tokyo Prefecture東京都",
+      "bbox": [139.562782, 35.520681034, 139.918904, 35.817679747],
+      "center": [139.77, 35.68],
+      "geometry": { "type": "Point", "coordinates": [139.77, 35.68] },
+      "context": [
+        {
+          "id": "region.15637623541111140",
+          "short_code": "JP-13",
+          "wikidata": "Q1490",
+          "text": "Tokyo Prefecture"
+        },
+        {
+          "id": "country.12470811176530190",
+          "wikidata": "Q17",
+          "short_code": "jp",
+          "text": "Japan"
+        }
+      ]
+    },
+    {
+      "id": "region.15637623541111140",
+      "type": "Feature",
+      "place_type": ["region"],
+      "relevance": 1,
+      "properties": { "short_code": "JP-13", "wikidata": "Q1490" },
+      "text": "Tokyo Prefecture",
+      "place_name": "Tokyo Prefecture, Japan",
+      "bbox": [136.069382, 20.425019, 153.986993, 35.898523],
+      "center": [139.77, 35.68],
+      "geometry": { "type": "Point", "coordinates": [139.77, 35.68] },
+      "context": [
+        {
+          "id": "country.12470811176530190",
+          "wikidata": "Q17",
+          "short_code": "jp",
+          "text": "Japan"
+        }
+      ]
+    },
+    {
+      "id": "country.12470811176530190",
+      "type": "Feature",
+      "place_type": ["country"],
+      "relevance": 1,
+      "properties": { "wikidata": "Q17", "short_code": "jp" },
+      "text": "Japan",
+      "place_name": "Japan",
+      "bbox": [122.8340332, 23.9582511, 145.8984375, 45.5928665],
+      "center": [138.592229549504, 36.3864928218528],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [138.592229549504, 36.3864928218528]
+      }
+    }
+  ],
+  "attribution": "NOTICE: © 2022 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service (https://www.mapbox.com/about/maps/). This response and the information it contains may not be retained. POI(s) provided by Foursquare."
+}
