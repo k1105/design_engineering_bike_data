@@ -1,3 +1,5 @@
+# ここでのstationは電車の駅であることに注意！！
+
 import math
 import pandas as pd
 import csv
@@ -30,13 +32,18 @@ if boxWidth != 0:
 x = (math.pi * (lon_min - l)) / 180
 y = math.log(math.tan(math.pi * (0.25 + lat_max / 360)))
 
-header = ["station_name", "x", "y"]
-with open(path, 'w', encoding='utf-8') as f:
-    writer = csv.writer(f)
-    # write the header
-    writer.writerow(header)
-    for index, row in station.iterrows():
-        coord = [row['station_lon'], row['station_lat']]
-        pos_x = (math.pi * (coord[0] - l)) / 180 - x
-        pos_y = y - math.log(math.tan(math.pi*(9.25 + coord[1] / 360)))
-        writer.writerow([row['station_name'], pos_x * scale, pos_y * scale])
+# print(x)
+# print(y)
+# print(scale)
+print(l)
+
+# header = ["station_name", "x", "y"]
+# with open(path, 'w', encoding='utf-8') as f:
+#     writer = csv.writer(f)
+#     # write the header
+#     writer.writerow(header)
+#     for index, row in station.iterrows():
+#         coord = [row['station_lon'], row['station_lat']]
+#         pos_x = (math.pi * (coord[0] - l)) / 180 - x
+#         pos_y = y - math.log(math.tan(math.pi*(9.25 + coord[1] / 360)))
+#         writer.writerow([row['station_name'], pos_x * scale, pos_y * scale])
