@@ -12,15 +12,20 @@ import random
 df = pd.read_csv('hello-cycling/data/station.csv', index_col=0)
 df_name = pd.read_csv('hello-cycling/data/station_name.csv', index_col=0)
 df_pref = pd.read_csv('hello-cycling/data/station_prefecture.csv', index_col=0)
-ex_pref_list = ["東京都", "神奈川県", "埼玉県"]
+ex_pref_list = ["東京都", "神奈川県", "埼玉県", "大阪府",
+                "静岡県", "千葉県", "兵庫県", "沖縄県", "京都府", "長野県", "岐阜県", "愛知県", "新潟県", "栃木県", "香川県", "佐賀県", "福岡県", "岩手県", "和歌山県", "熊本県", "茨城県", "愛媛県"]
 
 for i in range(10):
 
-    print(str(i)+'th attempt')
+    print('\n')
+    print(str(i+1)+'th attempt')
 
-    target_id = random.choice(df.index.values)
-    target_data = df.loc[target_id]
-    pref = df_pref.at[target_id, 'name']
+    pref = "東京都"
+
+    while pref in ex_pref_list:
+        target_id = random.choice(df.index.values)
+        target_data = df.loc[target_id]
+        pref = df_pref.at[target_id, 'name']
 
     print(target_id)
     print(pref)
