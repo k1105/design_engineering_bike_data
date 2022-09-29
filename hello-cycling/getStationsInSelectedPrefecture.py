@@ -98,10 +98,9 @@ for pref in pref_list:
 
             totalScore = 0
 
-            for current in index_list:
-                if current != target:
-                    current_pos = [st_pos.loc[current]
-                                   ['lon'], st_pos.loc[current]['lat']]
+            for current_index, current in st_pos.iterrows():
+                if current_index != target:
+                    current_pos = [current['lon'], current['lat']]
                     dist = cd.CalcDistance(current_pos, target_pos)
                     if dist > 5000:
                         score = 0

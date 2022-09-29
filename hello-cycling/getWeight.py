@@ -8,7 +8,7 @@ import math
 import requests
 from module import CalcDistance as cd
 
-url = url = "https://api-public.odpt.org/api/v4/gbfs/hellocycling/station_information.json"
+url = "https://api-public.odpt.org/api/v4/gbfs/hellocycling/station_information.json"
 response = requests.get(url)
 # response.json()でJSONデータに変換して変数へ保存
 jsonData = response.json()
